@@ -1,6 +1,7 @@
 def reverse(text: str) -> str:
     """
-    This function takes in a text as input and reverses the text
+    This function takes in a text as input and reverses
+    the text
 
     Parameters
     ----------
@@ -11,6 +12,11 @@ def reverse(text: str) -> str:
     -------
     str:
         Reversed word
+
+    Examples
+    --------
+    >>> reverse("Mr Surya")
+    "ayruS rM"
     """
     # Base case
     if len(text) == 0:
@@ -22,8 +28,8 @@ def reverse(text: str) -> str:
 
 def is_palindrome(text: str) -> bool:
     """
-    This function takes in a text as input and checks if it
-    is a palindrome
+    This function takes in a text as input and checks if
+    it is a palindrome
 
     Parameters
     ----------
@@ -34,6 +40,11 @@ def is_palindrome(text: str) -> bool:
     -------
     bool:
         True if word is palindrome, false if it is not
+
+    Examples
+    --------
+    >>> is_palindrome("Mr Surya")
+    False
     """
     text = text.strip("?,.! '").lower()
 
